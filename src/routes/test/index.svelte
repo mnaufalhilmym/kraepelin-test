@@ -50,9 +50,8 @@
 			{
 				const diffTime = totalTimeLimit - now;
 				totalTimer = '';
-				let hours = 0;
-				if ($settings.totalTimeLimit.unit === ESETTINGS.HOUR) {
-					hours = Math.floor(diffTime / 3600);
+				const hours = Math.floor(diffTime / 3600);
+				if ($settings.totalTimeLimit.unit === ESETTINGS.HOUR || hours > 0) {
 					totalTimer = (hours < 10 ? '0' + hours : hours) + ':';
 				}
 				const minutes = Math.floor((diffTime - hours * 3600) / 60);
@@ -64,9 +63,8 @@
 			{
 				const diffTime = sectionEndTime - now;
 				sectionTimer = '';
-				let minutes = 0;
-				if ($settings.sectionTimeLimit.unit === ESETTINGS.MINUTE) {
-					minutes = Math.floor(diffTime / 60);
+				const minutes = Math.floor(diffTime / 60);
+				if ($settings.sectionTimeLimit.unit === ESETTINGS.MINUTE || minutes > 0) {
 					sectionTimer = minutes < 10 ? '0' + minutes : minutes + ':';
 				}
 				const seconds = diffTime - minutes * 60;
