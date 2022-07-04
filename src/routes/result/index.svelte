@@ -47,7 +47,7 @@
 	}
 </script>
 
-<div class="max-w-screen min-h-screen p-6 flex flex-col items-center">
+<div class="max-w-screen min-h-screen p-8 flex flex-col items-center">
 	<header>
 		<h1 class="font-bold text-2xl text-center">Kraepelin Test</h1>
 	</header>

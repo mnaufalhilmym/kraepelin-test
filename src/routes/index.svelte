@@ -149,7 +149,7 @@
 		<h1 class="font-bold text-2xl">Kraepelin Test</h1>
 	</header>
 
-	<div class="w-full xs:max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl px-20 sm:px-0">
+	<div class="w-full xs:max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
 		<h2 class="mb-4 text-center text-xl">Settings</h2>
 		<form
 			on:submit|preventDefault={submitFormHandler}
@@ -165,7 +165,7 @@
 						name="sampleTimeLimitValue"
 						value={$settings.sampleTimeLimit.value}
 						min="1"
-						class="flex-1 px-2 py-1 border rounded-lg outline-none appearance-none"
+						class="w-full px-2 py-1 border rounded-lg outline-none"
 					/>
 					<select
 						name="sampleTimeLimitUnit"
@@ -187,7 +187,7 @@
 						name="sectionTimeLimitValue"
 						value={$settings.sectionTimeLimit.value}
 						min="1"
-						class="flex-1 px-2 py-1 border rounded-lg outline-none appearance-none"
+						class="w-full px-2 py-1 border rounded-lg outline-none"
 					/>
 					<select
 						name="sectionTimeLimitUnit"
@@ -211,7 +211,7 @@
 						name="incrementNextSectionTimeLimitValue"
 						value={$settings.incrementNextSectionTimeLimit.value}
 						min="0"
-						class="w-full px-2 py-1 border rounded-lg outline-none appearance-none"
+						class="w-full px-2 py-1 border rounded-lg outline-none"
 					/>
 					<select
 						name="incrementNextSectionTimeLimitUnit"
@@ -239,7 +239,7 @@
 						value={$settings.totalTimeLimit.value}
 						step="any"
 						min="1"
-						class="w-full px-2 py-1 border rounded-lg outline-none appearance-none"
+						class="w-full px-2 py-1 border rounded-lg outline-none"
 					/>
 					<select
 						name="totalTimeLimitUnit"

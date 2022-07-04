@@ -98,7 +98,7 @@
 	}
 </script>
 
-<div class="max-w-screen h-screen p-6 flex flex-col items-center">
+<div class="max-w-screen h-screen p-8 flex flex-col items-center">
 	<header>
 		<h1 class="font-bold text-2xl text-center">Kraepelin Test</h1>
 		<div class="mt-2 mx-auto w-fit">
@@ -108,7 +108,7 @@
 	</header>
 
 	<div
-		class="mt-12 mb-4 min-h-0 w-full xs:max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl px-20 sm:px-0 flex flex-col flex-1"
+		class="mt-12 mb-4 min-h-0 w-full xs:max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl flex flex-col flex-1"
 	>
 		<div class="p-2 bg-sky-300 rounded-t-xl">
 			<h2 class="font-bold text-xl text-center">Column {section} - {sectionTimer}</h2>
