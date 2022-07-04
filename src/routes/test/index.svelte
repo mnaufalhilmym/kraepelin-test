@@ -26,6 +26,8 @@
 		const totalTimeLimit =
 			$settings.totalTimeLimit.value * $settings.totalTimeLimit.unit + initTime - 1;
 		const sectionTimeLimit = $settings.sectionTimeLimit.value * $settings.sectionTimeLimit.unit - 1;
+		const incrementNextSectiomTimeLimit =
+			$settings.incrementNextSectionTimeLimit.value * $settings.incrementNextSectionTimeLimit.unit;
 
 		let sectionInitTime = initTime;
 		let sectionEndTime = sectionTimeLimit + sectionInitTime;
@@ -41,7 +43,8 @@
 				++section;
 				questionsComponents[0].scrollIntoView();
 				sectionInitTime = now;
-				sectionEndTime = sectionTimeLimit + sectionInitTime;
+				sectionEndTime =
+					sectionTimeLimit + sectionInitTime + incrementNextSectiomTimeLimit * (section - 1);
 			}
 
 			{
