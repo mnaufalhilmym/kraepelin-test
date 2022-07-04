@@ -121,7 +121,7 @@
 
 	function submitFormHandler() {
 		questions.newColumn(15);
-		goto('/test');
+		goto('/sample-test');
 	}
 
 	$: {
